@@ -1,0 +1,64 @@
+{
+  "learner": {
+    "name": "Wilson Chao",
+    "background": "心臟外科醫師",
+    "goal": "成為能與 AI 有效協作的心臟外科醫師型使用者"
+  },
+  "stats": {
+    "total_sessions": 0,
+    "total_cards_created": 0,
+    "last_session": null,
+    "started_at": "2025-01-14"
+  },
+  "parts": {
+    "Part1-WorldView": {
+      "name": "程式世界觀",
+      "topics": {
+        "how-computers-run-code": { "status": "not_started", "mastery": 0 },
+        "frontend-backend-database": { "status": "not_started", "mastery": 0 },
+        "what-is-api": { "status": "not_started", "mastery": 0 },
+        "common-programming-concepts": { "status": "not_started", "mastery": 0 }
+      }
+    },
+    "Part2-MyProjects": {
+      "name": "看懂你的專案",
+      "topics": {
+        "python-basics": { "status": "not_started", "mastery": 0 },
+        "javascript-basics": { "status": "not_started", "mastery": 0 },
+        "framework-concepts": { "status": "not_started", "mastery": 0 },
+        "env-and-secrets": { "status": "not_started", "mastery": 0 }
+      }
+    },
+    "Part3-AICollab": {
+      "name": "AI 協作技能",
+      "topics": {
+        "how-to-describe-requirements": { "status": "not_started", "mastery": 0 },
+        "reading-ai-output": { "status": "not_started", "mastery": 0 },
+        "common-error-types": { "status": "not_started", "mastery": 0 },
+        "debugging-strategies": { "status": "not_started", "mastery": 0 },
+        "when-to-intervene": { "status": "not_started", "mastery": 0 }
+      }
+    },
+    "Part4-Security": {
+      "name": "安全與風險意識",
+      "topics": {
+        "api-key-management": { "status": "not_started", "mastery": 0 },
+        "common-vulnerabilities": { "status": "not_started", "mastery": 0 },
+        "permissions-access-control": { "status": "not_started", "mastery": 0 },
+        "security-awareness": { "status": "not_started", "mastery": 0 }
+      }
+    },
+    "Part5-Toolchain": {
+      "name": "工具鏈素養",
+      "topics": {
+        "git-basics": { "status": "not_started", "mastery": 0 },
+        "terminal-basics": { "status": "not_started", "mastery": 0 },
+        "package-management": { "status": "not_started", "mastery": 0 },
+        "deployment-concepts": { "status": "not_started", "mastery": 0 }
+      }
+    }
+  },
+  "recently_learned": [],
+  "weak_areas": [],
+  "next_recommended": "Part1-WorldView/frontend-backend-database"
+}
