@@ -16,10 +16,9 @@
 
 1. **教學**：解釋概念、回答問題、提供結構化知識
 2. **逆向教學**：用學習者自己的專案當例子
-3. **整理**：將學習內容整理成 Markdown 筆記
-4. **強化記憶**：產生 Anki 卡片並加入系統
-5. **追蹤進度**：自動更新學習進度
-6. **主動建議**：分析弱點、推薦學習方向
+3. **整理**：將學習內容整理成 Markdown 筆記 + Heptabase 卡片
+4. **追蹤進度**：自動更新學習進度
+5. **主動建議**：分析弱點、推薦學習方向
 
 ---
 
@@ -43,7 +42,6 @@ Coding 學習教師/
 │   │   ├── pm.md                # /pm
 │   │   ├── teach.md             # /teach [主題]
 │   │   ├── quick.md             # /quick [問題]
-│   │   ├── card.md              # /card
 │   │   ├── save.md              # /save
 │   │   ├── mentor.md            # /mentor
 │   │   └── done.md              # /done
@@ -76,11 +74,10 @@ Coding 學習教師/
 
 1. 回顧本次學習內容
 2. **存檔筆記** → `notes/[Part]/[主題].md`
-3. **製作 Anki 卡片** → 加入 Anki（需開啟 Anki）
-4. **更新進度** → `learning/progress.json`
-5. **同步到 Heptabase Journal** → 使用 `append_to_journal`
-6. **詢問是否存到 Heptabase 卡片**（可選）
-7. 給出 1-2 句 Mentor 建議
+3. **更新進度** → `learning/progress.json`
+4. **同步到 Heptabase Journal** → 使用 `append_to_journal`
+5. **詢問是否存到 Heptabase 卡片**（可選）
+6. 給出 1-2 句 Mentor 建議
 
 ### Mastery 評估標準
 
@@ -106,40 +103,13 @@ Coding 學習教師/
 
 | 指令 | 功能 | 說明 |
 |------|------|------|
-| `/teach [主題]` | 系統學習 | 結構化教學 + 詢問是否做卡片/存檔 |
+| `/teach [主題]` | 系統學習 | 結構化教學 + 存檔 |
 | `/quick [問題]` | 快速問答 | 直接回答，不存檔 |
-| `/card` | 做成卡片 | 將內容轉成 Anki 卡片 |
-| `/save` | 存檔筆記 | 存成 Markdown |
+| `/save` | 存檔筆記 | 存成 Markdown + Heptabase |
 | `/mentor` | 學習報告 | 完整進度分析 + 建議 |
 | `/done` | 結束段落 | 手動觸發進度更新（通常說 OK 即可）|
 | `/concept` | 專案討論 | 討論系統設計與課綱調整 |
 | `/pm` | 專案管理 | 任務規劃與追蹤 |
-
----
-
-## Anki 整合
-
-### 連線設定
-- 使用 yanki-mcp-server
-- 需要 Anki 桌面版執行中 + Anki-Connect 外掛（2055492159）
-
-### 卡片格式
-- 使用 HTML 格式
-- **必須加入標籤**
-
-### 標籤格式
-
-```
-Coding::[Part]::[Topic]
-```
-
-| Part | 標籤範例 |
-|------|----------|
-| Part1-WorldView | `Coding::Part1-WorldView::API` |
-| Part2-MyProjects | `Coding::Part2-MyProjects::Flask` |
-| Part3-AICollab | `Coding::Part3-AICollab::Prompting` |
-| Part4-Security | `Coding::Part4-Security::APIKey` |
-| Part5-Toolchain | `Coding::Part5-Toolchain::Git` |
 
 ---
 
@@ -157,9 +127,12 @@ Coding::[Part]::[Topic]
 - 重點 2
 - 重點 3
 
-**Anki 卡片**：X 張
 **相關主題**：[[連結]]
 ```
+
+### 卡片功能
+
+重要概念可選擇存成 Heptabase 卡片，方便在白板上整理和連結。
 
 ---
 
@@ -212,13 +185,6 @@ Coding::[Part]::[Topic]
 ## 相關主題
 - [[連結到其他筆記]]
 ```
-
-### Anki 卡片設計原則
-
-- **一張卡片 = 一個記憶點**
-- 問題要具體
-- 答案簡潔但包含關鍵細節
-- 加入適當標籤
 
 ---
 
@@ -305,11 +271,10 @@ Coding::[Part]::[Topic]
 /teach    │
 /quick ───┘         ┌─────────────────────────────────┐
                     │  1. 存檔筆記 → notes/           │
-                    │  2. 製作卡片 → Anki（含標籤）   │
-                    │  3. 更新進度 → progress.json    │
-                    │  4. 同步到 Heptabase Journal    │
-                    │  5. 詢問是否存 Heptabase 卡片   │
-                    │  6. Mentor 建議                 │
+                    │  2. 更新進度 → progress.json    │
+                    │  3. 同步到 Heptabase Journal    │
+                    │  4. 詢問是否存 Heptabase 卡片   │
+                    │  5. Mentor 建議                 │
                     └─────────────────────────────────┘
                               │
                               ▼

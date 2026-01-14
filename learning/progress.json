@@ -5,9 +5,9 @@
     "goal": "成為能與 AI 有效協作的心臟外科醫師型使用者"
   },
   "stats": {
-    "total_sessions": 0,
+    "total_sessions": 1,
     "total_cards_created": 0,
-    "last_session": null,
+    "last_session": "2025-01-14",
     "started_at": "2025-01-14"
   },
   "parts": {
@@ -15,7 +15,7 @@
       "name": "程式世界觀",
       "topics": {
         "how-computers-run-code": { "status": "not_started", "mastery": 0 },
-        "frontend-backend-database": { "status": "not_started", "mastery": 0 },
+        "frontend-backend-database": { "status": "completed", "mastery": 3, "last_reviewed": "2025-01-14" },
         "what-is-api": { "status": "not_started", "mastery": 0 },
         "common-programming-concepts": { "status": "not_started", "mastery": 0 }
       }
@@ -58,7 +58,13 @@
       }
     }
   },
-  "recently_learned": [],
+  "recently_learned": [
+    {
+      "topic": "frontend-backend-database",
+      "date": "2025-01-14",
+      "mastery": 3
+    }
+  ],
   "weak_areas": [],
-  "next_recommended": "Part1-WorldView/frontend-backend-database"
+  "next_recommended": "Part1-WorldView/what-is-api"
 }

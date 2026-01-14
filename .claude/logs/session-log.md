@@ -47,10 +47,33 @@
 - **整合現有專案**：用學習者的 Flask app、Next.js 網站當教學素材
 
 ### 待辦事項
-- [ ] 開始第一次學習 session（建議從 `/teach 前端後端` 開始）
-- [ ] 測試 Anki 整合（需安裝 yanki-mcp-server）
-- [ ] 測試 Heptabase 整合
+- [x] 開始第一次學習 session（建議從 `/teach 前端後端` 開始）
+- [x] 測試 Heptabase 整合
 - [x] 完成系統架構設計
+
+---
+
+## Session: 2025-01-14 21:50
+
+### 變更摘要
+- 完成第一次學習 session：Part 1.2 前端 vs 後端 vs 資料庫
+- 移除 Anki 整合，改用 Heptabase 統一管理學習內容
+- 刪除 `/card` command
+
+### 決策記錄
+- **移除 Anki**：簡化工具鏈，用 Heptabase 卡片取代 Anki 卡片
+- **知識管理策略**：
+  - 筆記存到 `notes/` 目錄（Markdown）
+  - 重點存到 Heptabase Journal（自動）
+  - 概念卡片存到 Heptabase（可選）
+
+### 學習進度
+- Part 1.2 前端後端資料庫：mastery 3（能應用、連結到自己專案）
+- 下一步建議：Part 1.3 API
+
+### 待辦事項
+- [ ] 繼續學習 Part 1.3 API
+- [x] 移除 Anki 相關設定
 
 ---
 

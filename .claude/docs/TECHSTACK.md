@@ -20,8 +20,7 @@
 
 | 工具 | MCP Server | 用途 |
 |------|------------|------|
-| **Anki** | yanki-mcp-server | 記憶卡片、間隔重複 |
-| **Heptabase** | heptabase-mcp | 知識圖譜、學習日誌 |
+| **Heptabase** | heptabase-mcp | 知識圖譜、學習日誌、概念卡片 |
 
 ---
 
@@ -62,24 +61,6 @@ notes/
 
 ---
 
-## Anki 整合
-
-### 連線需求
-- Anki 桌面版執行中
-- Anki-Connect 外掛 (2055492159)
-
-### 卡片標籤格式
-```
-Coding::[Part]::[Topic]
-```
-
-範例：
-- `Coding::Part1-WorldView::API`
-- `Coding::Part2-MyProjects::Flask`
-- `Coding::Part4-Security::APIKey`
-
----
-
 ## Heptabase 整合
 
 ### 寫入功能
@@ -105,8 +86,7 @@ Coding::[Part]::[Topic]
 |------|----------|
 | Claude Code | 學習者已熟悉，無需額外學習新工具 |
 | Subagent | 可分離不同學習模式，各司其職 |
-| Anki | 學習者已在使用，記憶效果佳 |
-| Heptabase | 學習者已在使用，視覺化知識連結 |
+| Heptabase | 學習者已在使用，視覺化知識連結，統一存放學習內容 |
 | Markdown | 簡單、可版本控制、跨平台 |
 
 ---
@@ -116,3 +96,4 @@ Coding::[Part]::[Topic]
 | 日期 | 變更內容 |
 |------|----------|
 | 2025-01-14 | 初版建立 |
+| 2025-01-14 | 移除 Anki 整合，改用 Heptabase 統一管理 |
