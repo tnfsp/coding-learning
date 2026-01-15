@@ -69,38 +69,103 @@
 
 ## Part 3：AI 協作技能
 
-**學習目標**：更有效地與 AI 協作，成為「心臟外科醫師」型使用者
+**學習目標**：更有效地與 AI 協作，從「Vibe Coding」進化到「Human-Agent Engineering」
 
-### 3.1 如何描述需求
+> **參考課程**：
+> - [Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-action) (Anthropic 官方)
+> - [CS146S: The Modern Software Developer](https://themodernsoftware.dev/) (Stanford)
+
+---
+
+### Module A：基礎協作
+
+#### 3.1 如何描述需求給 AI
 - [ ] 好的 prompt vs 壞的 prompt
 - [ ] 提供足夠的 context
 - [ ] 分步驟請求 vs 一次性請求
 - [ ] 實例：重寫你過去的需求描述
 
-### 3.2 如何讀懂 AI 輸出
+#### 3.2 如何讀懂 AI 輸出
 - [ ] 快速掃描程式碼結構
 - [ ] 看懂函數名稱和註解
 - [ ] 識別關鍵邏輯
 - [ ] 不需要 100% 理解，但要抓重點
 
-### 3.3 常見錯誤類型
+#### 3.3 常見錯誤類型與除錯
 - [ ] 語法錯誤 (SyntaxError)
 - [ ] 類型錯誤 (TypeError)
 - [ ] 找不到模組 (ModuleNotFoundError)
-- [ ] 權限錯誤
-- [ ] 網路錯誤
+- [ ] 權限錯誤、網路錯誤
 - [ ] 如何讀錯誤訊息
-
-### 3.4 除錯策略
-- [ ] 先讀錯誤訊息
 - [ ] 定位問題範圍
 - [ ] 如何向 AI 描述問題
-- [ ] 何時該自己試、何時該問 AI
 
-### 3.5 判斷何時該介入
+#### 3.4 判斷何時介入、何時信任
 - [ ] AI 可能犯錯的情況
 - [ ] 安全相關的警覺點
 - [ ] 「這看起來怪怪的」直覺
+- [ ] 何時該自己試、何時該問 AI
+
+---
+
+### Module B：Claude Code 實戰
+
+> 來源：[Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-action)
+
+#### 3.5 Claude Code 核心概念
+- [ ] 架構與工作原理
+- [ ] 上下文管理（/init、Claude.md、@提及）
+- [ ] 核心工具：文件操作、命令執行、代碼分析
+- [ ] 實例：你的學習系統是如何設計的
+
+#### 3.6 對話與模式控制
+- [ ] 快捷鍵與命令
+- [ ] Plan Mode（規劃模式）：複雜任務的拆解
+- [ ] Think Mode（思考模式）：深度分析
+- [ ] 實例：用 Plan Mode 規劃一個功能
+
+#### 3.7 自定義命令與 Hooks
+- [ ] Slash Commands 的設計原理
+- [ ] 建立個人化工作流
+- [ ] Hooks：自動化行為觸發
+- [ ] 實例：你的 /teach、/mentor 是怎麼運作的
+
+#### 3.8 MCP 服務器與擴展
+- [ ] 什麼是 MCP（Model Context Protocol）
+- [ ] MCP 服務器的概念
+- [ ] 實例：Heptabase MCP、GitHub MCP
+- [ ] 瀏覽器自動化等進階應用
+
+---
+
+### Module C：代理架構與進階
+
+> 來源：[CS146S: The Modern Software Developer](https://themodernsoftware.dev/)
+
+#### 3.9 Coding Agent 原理
+- [ ] 代理（Agent）是什麼
+- [ ] 代理如何使用工具（Tool Use）
+- [ ] 工具調用機制
+- [ ] 為什麼理解這些能讓你更有效協作
+
+#### 3.10 AI 輔助測試
+- [ ] AI 生成測試的概念
+- [ ] 安全漏洞自動檢測
+- [ ] 測試覆蓋率與品質
+- [ ] 何時該信任 AI 測試、何時該人工檢查
+
+#### 3.11 AI 程式碼審查
+- [ ] GitHub PR 自動審查概念
+- [ ] AI 審查能發現什麼、會漏掉什麼
+- [ ] 品質控制策略
+- [ ] 實例：設定 GitHub 整合
+
+#### 3.12 Human-Agent 協作模式
+- [ ] 從「Vibe Coding」到「Human-Agent Engineering」
+- [ ] 核心理念：你是 AI 團隊的經理
+- [ ] 設置代理成功的環境（清晰 context、結構化程式碼）
+- [ ] 多代理協作的概念
+- [ ] 未來展望：軟體工程師的角色演變
 
 ---
 
@@ -176,6 +241,14 @@
 4. **Part 4.1** - API Key 安全（立即可用）
 5. **Part 5.1** - Git 基礎（你已經在用了）
 
+### Part 3 學習路徑
+
+Part 3 已擴充為三個模組，建議按順序學習：
+
+1. **Module A（3.1-3.4）**：基礎協作 — 建立 AI 協作的基本心智模型
+2. **Module B（3.5-3.8）**：Claude Code 實戰 — 實際操作，邊做邊學
+3. **Module C（3.9-3.12）**：代理架構與進階 — 理解底層原理，成為進階使用者
+
 ### 按需學習
 
 遇到問題時查閱對應章節，不需要從頭到尾讀完。
@@ -188,4 +261,5 @@
 
 ---
 
-*最後更新：2025-01-14*
+*最後更新：2025-01-16*
+*Part 3 擴充：整合 Claude Code in Action + CS146S 課程內容*

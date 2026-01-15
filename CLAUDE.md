@@ -202,11 +202,13 @@ Coding 學習教師/
 - 框架概念：Flask 路由、Next.js 組件
 - 環境變數與 secrets
 
-### Part 3：AI 協作技能
-- 如何描述需求給 AI
-- 如何讀懂 AI 的輸出
-- 常見錯誤類型與除錯策略
-- 何時該介入、何時該信任 AI
+### Part 3：AI 協作技能（擴充版）
+
+> 整合 [Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-action) + [CS146S](https://themodernsoftware.dev/)
+
+- **Module A：基礎協作** — 描述需求、讀懂輸出、除錯、判斷介入
+- **Module B：Claude Code 實戰** — 上下文管理、Plan/Think Mode、自定義命令、MCP
+- **Module C：代理架構與進階** — Agent 原理、AI 測試、程式碼審查、Human-Agent 協作
 
 ### Part 4：安全與風險意識
 - API key 管理與洩漏風險
@@ -285,4 +287,4 @@ Coding 學習教師/
 ---
 
 *此專案由使用者與 Claude 共同建立，持續演化中。*
-*最後更新：2025-01-14*
+*最後更新：2025-01-16*

@@ -77,6 +77,44 @@
 
 ---
 
+## Session: 2025-01-16 - 課綱擴充
+
+### 變更摘要
+- 整合兩堂外部課程到學習系統：
+  - [Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-action) (Anthropic 官方)
+  - [CS146S: The Modern Software Developer](https://themodernsoftware.dev/) (Stanford)
+- 擴充 Part 3「AI 協作技能」從 5 個小節 → 12 個小節（3 個 Module）
+- 更新 curriculum.md、PRD.md、CLAUDE.md
+
+### 決策記錄
+- **整合方式**：擴充現有 Part 3，而非新增 Part 6
+  - 原因：Part 3 本就是「AI 協作技能」，新內容是深化而非新主題
+- **Module 結構**：
+  - Module A（3.1-3.4）：基礎協作 — 原有內容強化
+  - Module B（3.5-3.8）：Claude Code 實戰 — 來自 Claude Code in Action
+  - Module C（3.9-3.12）：代理架構與進階 — 來自 CS146S
+- **核心理念採納**：「Human-Agent Engineering, not Vibe Coding」
+  - 這與學習系統的目標完美契合：從「能跑就好」進階到「知道為什麼」
+
+### 新增內容重點
+| 新小節 | 主題 |
+|--------|------|
+| 3.5 | Claude Code 核心概念（上下文管理、核心工具）|
+| 3.6 | 對話與模式控制（Plan Mode、Think Mode）|
+| 3.7 | 自定義命令與 Hooks |
+| 3.8 | MCP 服務器與擴展 |
+| 3.9 | Coding Agent 原理 |
+| 3.10 | AI 輔助測試 |
+| 3.11 | AI 程式碼審查 |
+| 3.12 | Human-Agent 協作模式 |
+
+### 待辦事項
+- [ ] 繼續學習 Part 1.3 API（原有進度）
+- [ ] 開始學習新的 Part 3 Module B（Claude Code 實戰）
+- [ ] 考慮是否要實際上完兩堂課程，還是用課綱自學
+
+---
+
 <!-- 新的 session 記錄請加在這裡，格式如下：
 
 ## Session: YYYY-MM-DD HH:MM

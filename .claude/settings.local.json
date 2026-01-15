@@ -3,7 +3,11 @@
     "allow": [
       "Bash(git:*)",
       "Bash(npm:*)",
-      "Bash(npx:*)"
+      "Bash(npx:*)",
+      "WebFetch(domain:anthropic.skilljar.com)",
+      "WebFetch(domain:themodernsoftware.dev)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:allarddewinter.net)"
     ]
   }
 }
